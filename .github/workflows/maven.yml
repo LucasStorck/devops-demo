@@ -28,7 +28,7 @@ jobs:
         distribution: 'temurin'
         cache: maven
     - name: Build with Maven
-      run: mvn clean package -f backend/pom.xml
+      run: mvn clean package -f demo/pom.xml
 
     - name: Docker login
       uses: docker/login-action@v3
